@@ -1,18 +1,21 @@
 *{
     margin: 0;
+
 }
 
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    display: block;
+    margin: 0 auto;
 
-    min-width: 300px;
 }
+
 
 header{
 font-size: 18px;
 color:#e5e7eb;
-padding: 0 180px 10px 180px;
+padding: 20px 100px 10px 180px;
 }
 
 .container {
@@ -35,11 +38,13 @@ padding: 0 180px 10px 180px;
 }
 
 /* General stuff */
-
-#main, footer, header {
-
+#background,footer, header {
     background-color: #1f2937;
-    background-color: #1f2937;
+}
+#main{
+    display: block;
+    margin: 0 auto;
+    max-width: 1000px;
     padding: 0 60px 8px 60px;
 }
 
@@ -50,10 +55,11 @@ padding: 0 180px 10px 180px;
     padding: 0 80px 30px 80px;
 }
 #main p {
-    width: 400px;
     font-size: 18px;
-    color: #e5e7eb;
     padding: 34px 39px 27px 0px;
+}
+.main_text{
+    color: #e5e7eb;
 }
 .border {
     padding: 0 40px 0 40px;
@@ -61,13 +67,17 @@ padding: 0 180px 10px 180px;
 }
 .container .placeholder {
     float: right;
-    width: 430px;
-    height: 200px;
-    padding-right: 7px;
-    padding-top: 17px;
+   
     right: 20px;
 }
-
+.placeholder{
+    float: right;
+    width: 50%;
+    height: 200px;
+    border:2px solid rgba(186, 186, 186, 0.3) ;
+    margin-left:20px;
+    border-radius: 40px;
+}
 h1 {
     font-size: 48px;
     font-weight:bold;
@@ -75,7 +85,7 @@ h1 {
 }
 
 .container h2 {
-    padding: 50px 450px 50px 450px;
+    padding:50px 150px 50px 150px;
     text-align: center;
     font-size: 36px;
     font-weight:bold;
@@ -86,26 +96,26 @@ h1 {
 /* Container 2 */
 
 .column {
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
     padding: 0px 10px 10px 0px;
     }
 .row {
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    padding: 0px 10px 10px 0px;
-    
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    margin: 10px 20px 10px 20px;
 }
-.subtext{
-    margin:1em;
+.subtext p{
     width:150px;
-    height: 150px;  
+
+    color: #1f2937;
     border-radius: 12px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     
 }
 
@@ -121,12 +131,20 @@ h1 {
 }
 
 /* Container 3 */
-
-#quote{
+#background_quote{
     background-color: #e5e7eb;
+}
+#quote{
+max-width: 800px;
     padding: 100px 30px 120px 30px;
 }
 
+#main_signup{
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 60px 8px 60px;
+}
 
 blockquote {
     text-align: center;
@@ -150,13 +168,16 @@ cite {
 .signup_button,.signup_button1 { 
     background-color:#3882f6;
     border-radius: 8px;
-
     font-weight: bold;
 }
 .signup_button {
     padding: 2px 20px 2px 20px;
     margin: 2px 0 20px;
     font-size: 18px;
+    border: 2px solid #3882f6;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
 }
 
 .signup_button1{
@@ -192,17 +213,24 @@ footer {
 
 /* links styles */
 a:link {
-    color:#F9faf8;
+    color:#3882f6;
     text-decoration: none;
 }
-  
-  a:visited {
-    color: #F9faf8;
-}
-
-  a:hover {
-    color:pink;
+a:visited{
+    color:white
 }
   a:active {
     color: #3882f6;
+}
+a:link{
+    transition: all 450ms ease-in-out;
+}
+a:visited:hover{
+    color:#3882f6;
+  
+}
+.signup_button:hover,.signup_button1:hover{
+    background-color: #e5e7eb;
+    color: #3882f6;
+    transition: all 450ms ease-in-out;
 }
